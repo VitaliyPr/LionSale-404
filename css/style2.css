@@ -32,7 +32,7 @@
 
 @font-face {
   font-family: 'GilroyExtraBold';
-  src: url("../Gilroy-Bold.woff") format("woff");
+  src: url("../Gilroy-ExtraBold.woff") format("woff");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -72,7 +72,7 @@
 
 @font-face {
   font-family: 'GilroyExtraBold';
-  src: url("../Gilroy-Bold.woff") format("woff");
+  src: url("../Gilroy-ExtraBold.woff") format("woff");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -206,9 +206,6 @@ ul {
 .first {
   position: relative;
   height: 100vh;
-  background-image: linear-gradient(-76deg, #31394e 0%, #040f14 100%);
-  background-color: #3a4151;
-  opacity: .95;
 }
 
 .first__wrapp {
@@ -260,101 +257,54 @@ ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  background-color: #fff;
-  background-image: none;
+  background-image: linear-gradient(-76deg, #31394e 0%, #040f14 100%);
+  background-color: #3a4151;
 }
 
-.arror .header-tel {
-  color: #2e3339;
-}
-
-.arror__left {
-  width: 50vw;
-  height: 100vh;
-  background-image: url(../img/bg_1-min.png);
-  background-size: cover;
+.arror .lion {
+  background-image: url("../img/lion.png");
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: center right;
+  background-size: contain;
+  position: absolute;
+  width: 100%;
+  height: 80%;
+  margin: 5% 0;
+}
+
+.arror__content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
-  padding-bottom: 2.60416667vw;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
-.arror__left-credo {
-  margin-bottom: 3.64583333vw;
-}
-
-.arror__left .first__wrapp {
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-}
-
-.arror__right {
-  width: 50vw;
-  height: 44%;
-  margin: auto;
-  background-color: #fff;
-}
-
-.arror__right-wrapp {
-  background-image: url("../img/404.png");
+.arror__center {
+  background-image: url("../img/border-content.png");
   background-repeat: no-repeat;
   background-size: contain;
-  background-position: top;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-  position: relative;
-  height: 100%;
-  margin: 0 6.25vw;
+  padding: 0 7.8125vw 10.6724vh 7.8125vw;
 }
 
-.arror__right-text {
-  margin-bottom: 13.8741vh;
-  padding-left: 4vw;
+.arror__404 p {
+  font-family: 'GilroyExtraBold', sans-serif;
+  font-weight: 800;
+  font-size: 8.85415vw;
+  color: rgba(33, 42, 49, 0);
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #fff;
 }
 
-.arror__right-text p {
+.arror__404 p span {
+  font-size: 13.02082vw;
+}
+
+.arror__text p {
   font-family: 'GilroyLight', sans-serif;
-  color: #2e3339;
-  font-size: 75px;
-}
-
-.arror__right-link {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-}
-
-.arror__right-link a {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.arror__right-link a span {
-  margin-right: 20px;
+  font-size: 28px;
+  color: #fff;
 }
 
 @media screen and (max-width: 968px) {
@@ -447,24 +397,32 @@ ul {
     opacity: .95;
   }
   .arror .first__wrapp {
+    height: 100vh;
     padding-top: 0;
-  }
-  .arror__left {
-    width: 100%;
-    height: 50vh;
-    padding-bottom: 30px;
-    background: none;
-  }
-  .arror__right {
-    width: 100%;
-    height: 50vh;
     padding-bottom: 30px;
   }
-  .arror__right-text {
-    margin-bottom: 50px;
+  .arror__content {
+    margin-top: 30px;
+    height: 60%;
   }
-  .arror__right-wrapp {
-    background-position: center;
+  .arror__center {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    background-size: cover;
+  }
+  .arror__404 p {
+    font-size: 80px;
+  }
+  .arror__404 p span {
+    font-size: 120px;
   }
 }
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=style2.css.map */

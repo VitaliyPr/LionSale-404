@@ -1,0 +1,212 @@
+@import 'fonts'
+@import 'grid'
+
+@keyframes rot
+  0% 
+    transform: rotate(0deg)
+  100% 
+    transform: rotate(360deg)
+@-webkit-keyframes rot
+  0%
+    transform: rotate(0deg)
+  100%
+    transform: rotate(360deg)
+
+.main 
+  display: block
+
+.btn
+  a
+    font-size: 16px
+    line-height: 36px
+    color: #fff
+    position: relative
+    padding: 16px 51px 16px 20px
+    border: 1px solid #fff
+    &:after
+      content: ''
+      width: 15px
+      height: 1px
+      background-color: #fff
+      position: absolute
+      top: 50%
+      right: 21px
+  
+.header
+  width: 100vw
+  z-index: 10
+  position: absolute
+  top: 0
+  &__wrapp
+    width: 80%
+    display: flex
+    align-items: center
+    margin-left: 109px
+    margin-top: 4vh
+  &-logo
+    margin-right: 24px
+  &-menu
+    &-btn
+      cursor: pointer
+      span
+        display: block
+        height: 4px
+        background-color: #fff
+      .line1
+        width: 54px
+        margin-bottom: 9px
+      .line2 
+        width: 69px
+  &-tel
+    +light
+    font-size: 38.36px
+    color: #fff
+    margin-left: auto
+
+.first
+  position: relative
+  height: 100vh
+  &__wrapp
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    z-index: 2
+    height: 70vh
+    width: 80%
+    margin-top: 26.7vh
+    margin-left: 109px
+    &-footer
+      display: flex
+      align-items: center
+      z-index: 2
+      &-credo
+        margin-right: 93px
+      &-social
+        ul
+          display: flex
+          li 
+            a 
+              margin-right: 17px
+
+.arror
+  position: relative
+  width: 100vw
+  height: 100vh
+  display: flex
+  background-image: linear-gradient(-76deg, #31394e 0%, #040f14 100%)
+  background-color: #3a4151
+  .lion
+    background-image: url('../img/lion.png')
+    background-repeat: no-repeat
+    background-position: center right
+    background-size: contain
+    position: absolute
+    width: 100% 
+    height: 80%
+    margin: 5% 0
+  &__content
+    display: flex
+    justify-content: center
+  &__center
+    background-image: url('../img/border-content.png')
+    background-repeat: no-repeat
+    background-size: contain
+    padding: 0 7.8125vw 10.6724vh 7.8125vw
+  &__404
+    p
+      +extrabold
+      font-weight: 800
+      font-size: 8.85415vw
+      color: rgba(33, 42, 49, -0.5)
+      -webkit-text-stroke-width: 1px
+      -webkit-text-stroke-color: #fff
+      span
+        font-size: 13.02082vw
+  &__text
+    p
+      +light
+      font-size: 28px
+      color: #fff
+
+@media screen and (max-width: 968px)
+  br
+    display: none
+  .pages 
+    height: auto
+  .btn
+    a
+      font-size: 14px
+      padding: 16px 65px 16px 22px
+  .header
+    position: relative
+    width: 91%
+    margin: 0 auto
+    z-index: 10
+    &__wrapp
+      display: flex
+      align-items: center
+      justify-content: space-between
+      padding-left: 0
+      padding-right: 0
+      padding-top: 0px
+      margin-left: 0vw
+    &-menu
+      &-btn
+        cursor: pointer
+        span
+          display: block
+          height: 4px
+          background-color: #fff
+        .line1
+          width: 45px
+          margin-bottom: 9px
+        .line2 
+          width: 56px
+    &-tel
+      display: none
+
+  .first
+    width: 100%
+    height: auto
+    padding-bottom: 30px
+    overflow: hidden
+    padding-left: 4vw
+    padding-right: 4vw
+    &__wrapp
+      width: 91%
+      margin: 0 auto
+      height: auto
+      padding-top: 60
+      padding-bottom: 0
+      &-footer
+        margin-top: 30px 
+        justify-content: flex-end 
+        &-credo
+          margin-right: 0
+        &-social 
+            display: none
+  .arror
+    width: 100vw !important
+    height: 100vh !important
+    flex-direction: column !important
+    padding: 0 
+    background-image: linear-gradient(-76deg, #31394e 0%, #040f14 100%)
+    background-color: #3a4151
+    opacity: .95
+    .first__wrapp
+      height: 100vh
+      padding-top: 0
+      padding-bottom: 30px
+    &__content
+      margin-top: 30px
+      height: 60% 
+    &__center
+      display: flex
+      justify-content: center
+      flex-direction: column
+      background-size: cover
+    &__404
+      p
+        font-size: 80px
+        span
+          font-size: 120px
