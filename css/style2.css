@@ -396,14 +396,16 @@ ul {
     background-color: #3a4151;
     opacity: .95;
   }
+  .arror header {
+    height: 15%;
+  }
   .arror .first__wrapp {
     height: 100vh;
     padding-top: 0;
     padding-bottom: 30px;
   }
   .arror__content {
-    margin-top: 30px;
-    height: 60%;
+    height: 70%;
   }
   .arror__center {
     display: -webkit-box;
@@ -416,7 +418,8 @@ ul {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    background-size: cover;
+    background-image: none;
+    padding: 0;
   }
   .arror__404 p {
     font-size: 80px;
