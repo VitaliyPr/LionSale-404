@@ -190,6 +190,9 @@ ul {
 .first {
   position: relative;
   height: 100vh;
+  background-image: linear-gradient(-76deg, #31394e 0%, #040f14 100%);
+  background-color: #3a4151;
+  opacity: .95;
 }
 
 .first__wrapp {
@@ -241,6 +244,8 @@ ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  background-color: #fff;
+  background-image: none;
 }
 
 .arror .header-tel {
@@ -277,6 +282,7 @@ ul {
   width: 50vw;
   height: 44%;
   margin: auto;
+  background-color: #fff;
 }
 
 .arror__right-wrapp {
@@ -347,9 +353,25 @@ ul {
     padding: 16px 65px 16px 22px;
   }
   .header {
-    width: 100%;
+    position: relative;
+    width: 91%;
     margin: 0 auto;
     z-index: 10;
+  }
+  .header__wrapp {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 0px;
+    margin-left: 0vw;
   }
   .header-menu-btn {
     cursor: pointer;
@@ -369,33 +391,58 @@ ul {
   .header-tel {
     display: none;
   }
-  .arror {
-    width: 100vw;
-    height: 100vh;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+  .first {
+    width: 100%;
+    height: auto;
+    padding-bottom: 30px;
+    overflow: hidden;
+    padding-left: 4vw;
+    padding-right: 4vw;
   }
-  .arror .first__wrapp-footer {
+  .first__wrapp {
+    width: 91%;
+    margin: 0 auto;
+    height: auto;
+    padding-top: 60px;
+    padding-bottom: 0;
+  }
+  .first__wrapp-footer {
     margin-top: 30px;
     -webkit-box-pack: end;
         -ms-flex-pack: end;
             justify-content: flex-end;
   }
-  .arror .first__wrapp-footer-credo {
+  .first__wrapp-footer-credo {
     margin-right: 0;
   }
-  .arror .first__wrapp-footer-social {
+  .first__wrapp-footer-social {
     display: none;
+  }
+  .arror {
+    width: 100vw !important;
+    height: 100vh !important;
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: column !important;
+            flex-direction: column !important;
+    padding: 0;
+    background-image: linear-gradient(-76deg, #31394e 0%, #040f14 100%);
+    background-color: #3a4151;
+    opacity: .95;
   }
   .arror__left {
     width: 100%;
     height: 50vh;
+    padding: 30px 0;
+    background: none;
   }
   .arror__right {
     width: 100%;
     height: 50vh;
+    padding-bottom: 30px;
+  }
+  .arror__right-wrapp {
+    background-position: center;
   }
 }
 /*# sourceMappingURL=style.css.map */
