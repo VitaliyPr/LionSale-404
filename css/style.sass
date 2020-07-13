@@ -1,0 +1,156 @@
+@import 'fonts'
+@import 'grid'
+
+@keyframes rot
+  0% 
+    transform: rotate(0deg)
+  100% 
+    transform: rotate(360deg)
+@-webkit-keyframes rot
+  0%
+    transform: rotate(0deg)
+  100%
+    transform: rotate(360deg)
+
+.main 
+  display: block
+
+// .scroll-container
+//   display: flex
+//   flex-wrap: nowrap
+//   overflow-x: auto
+
+.btn
+  a
+    font-size: 16px
+    line-height: 36px
+    color: #fff
+    position: relative
+    padding: 16px 51px 16px 20px
+    border: 1px solid #fff
+    &:after
+      content: ''
+      width: 15px
+      height: 1px
+      background-color: #fff
+      position: absolute
+      top: 50%
+      right: 21px
+  
+.header
+  width: 100vw
+  z-index: 10
+  position: absolute
+  top: 0
+  &__wrapp
+    width: 85%
+    display: flex
+    align-items: center
+    margin: 0 auto
+    padding-top: 2.60416667vw
+    &-logo
+      margin-right: 24px
+    &-menu
+      &-btn
+        cursor: pointer
+        span
+          display: block
+          height: 4px
+          background-color: #fff
+        .line1
+          width: 54px
+          margin-bottom: 9px
+        .line2 
+          width: 69px
+    &-tel
+      +light
+      font-size: calc(26px + 12 * (100vw / 1920))
+      color: #2e3339
+      margin-left: auto
+
+
+.arror
+  position: relative
+  width: 100vw
+  height: 100vh
+  display: flex
+  &__left
+    width: 50vw
+    height: 100vh
+    background-image: url(../img/bg_1-min.png)
+    background-size: cover
+    background-repeat: no-repeat
+    background-position: center
+    display: flex
+    align-items: flex-end
+    padding-bottom: 2.60416667vw
+    &-footer
+      display: flex
+      align-items: center
+      z-index: 2
+      padding-left: 5.20834vw
+      &-credo
+        margin-right: 4.947915vw
+      &-social
+        ul
+          display: flex
+          li
+            margin-right: 17px
+            &:last-child
+              margin-right: 0
+  &__right
+    background-color: #f3f4f6
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    z-index: 2
+    width: 50vw
+    height: 100vh
+    
+      
+
+@media screen and (max-width: 968px)
+  br
+    display: none
+  .pages 
+    height: auto
+  .btn
+    a
+      font-size: 14px
+      padding: 16px 65px 16px 22px
+  .header
+    width: 100%
+    margin: 0 auto
+    z-index: 10
+    &__wrapp
+      &-menu
+        &-btn
+          cursor: pointer
+          span
+            display: block
+            height: 4px
+            background-color: #fff
+          .line1
+            width: 45px
+            margin-bottom: 9px
+          .line2 
+            width: 56px
+      &-tel
+        display: none
+  .arror
+    width: 100vw
+    height: 100vh
+    flex-direction: column
+    &__left
+      width: 100%
+      height: 50vh
+      &-footer
+        margin-top: 30px 
+        justify-content: flex-end 
+        &-credo
+          margin-right: 0
+        &-social 
+          display: none
+    &__right
+      width: 100%
+      height: 50vh

@@ -1,0 +1,376 @@
+@font-face {
+  font-family: 'GilroyRegular';
+  src: url("../fonts/Gilroy-Regular.eot");
+  src: url("../fonts/Gilroy-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Gilroy-Regular.woff") format("woff"), url("../fonts/Gilroy-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'GilroyThin';
+  src: url("../fonts/Gilroy-Thin.eot");
+  src: url("../fonts/Gilroy-Thin.eot?#iefix") format("embedded-opentype"), url("../fonts/Gilroy-Thin.woff") format("woff"), url("../fonts/Gilroy-Thin.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'GilroyLight';
+  src: url("../fonts/Gilroy-Light.eot");
+  src: url("../fonts/Gilroy-Light.eot?#iefix") format("embedded-opentype"), url("../fonts/Gilroy-Light.woff") format("woff"), url("../fonts/Gilroy-Light.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'GilroyHeavy';
+  src: url("../fonts/Gilroy-Heavy.eot");
+  src: url("../fonts/Gilroy-Heavy.eot?#iefix") format("embedded-opentype"), url("../fonts/Gilroy-Heavy.woff") format("woff"), url("../fonts/Gilroy-Heavy.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'GilroyExtraBold';
+  src: url("../fonts/Gilroy-ExtraBold.eot");
+  src: url("../fonts/Gilroy-ExtraBold.eot?#iefix") format("embedded-opentype"), url("../fonts/Gilroy-ExtraBold.woff") format("woff"), url("../fonts/Gilroy-ExtraBold.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'GilroyMedium';
+  src: url("../fonts/Gilroy-Medium.eot");
+  src: url("../fonts/Gilroy-Medium.eot?#iefix") format("embedded-opentype"), url("../fonts/Gilroy-Medium.woff") format("woff"), url("../fonts/Gilroy-Medium.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'CormorantGaramond';
+  src: url("../fonts/CormorantGaramond-Regular.eot");
+  src: url("../fonts/CormorantGaramond-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/CormorantGaramond-Regular.woff") format("woff"), url("../fonts/CormorantGaramond-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'GilroyRegular';
+  src: url("../fonts/Gilroy-Regular.eot");
+  src: url("../fonts/Gilroy-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Gilroy-Regular.woff") format("woff"), url("../fonts/Gilroy-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'GilroyThin';
+  src: url("../fonts/Gilroy-Thin.eot");
+  src: url("../fonts/Gilroy-Thin.eot?#iefix") format("embedded-opentype"), url("../fonts/Gilroy-Thin.woff") format("woff"), url("../fonts/Gilroy-Thin.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'GilroyLight';
+  src: url("../fonts/Gilroy-Light.eot");
+  src: url("../fonts/Gilroy-Light.eot?#iefix") format("embedded-opentype"), url("../fonts/Gilroy-Light.woff") format("woff"), url("../fonts/Gilroy-Light.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'GilroyHeavy';
+  src: url("../fonts/Gilroy-Heavy.eot");
+  src: url("../fonts/Gilroy-Heavy.eot?#iefix") format("embedded-opentype"), url("../fonts/Gilroy-Heavy.woff") format("woff"), url("../fonts/Gilroy-Heavy.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'GilroyExtraBold';
+  src: url("../fonts/Gilroy-ExtraBold.eot");
+  src: url("../fonts/Gilroy-ExtraBold.eot?#iefix") format("embedded-opentype"), url("../fonts/Gilroy-ExtraBold.woff") format("woff"), url("../fonts/Gilroy-ExtraBold.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'GilroyMedium';
+  src: url("../fonts/Gilroy-Medium.eot");
+  src: url("../fonts/Gilroy-Medium.eot?#iefix") format("embedded-opentype"), url("../fonts/Gilroy-Medium.woff") format("woff"), url("../fonts/Gilroy-Medium.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'CormorantGaramond';
+  src: url("../fonts/CormorantGaramond-Regular.eot");
+  src: url("../fonts/CormorantGaramond-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/CormorantGaramond-Regular.woff") format("woff"), url("../fonts/CormorantGaramond-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+*, *:after, *:before {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  outline: none;
+}
+
+a, a:focus, a:hover, a:link, a:active {
+  text-decoration: none;
+  color: inherit;
+}
+
+body {
+  font-family: 'GilroyRegular', sans-serif;
+  -webkit-perspective: 1;
+          perspective: 1;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  text-rendering: optimizeLegibility;
+  overflow: hidden;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+ul {
+  list-style: none;
+}
+
+@keyframes rot {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@-webkit-keyframes rot {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+.main {
+  display: block;
+}
+
+.btn a {
+  font-size: 16px;
+  line-height: 36px;
+  color: #fff;
+  position: relative;
+  padding: 16px 51px 16px 20px;
+  border: 1px solid #fff;
+}
+
+.btn a:after {
+  content: '';
+  width: 15px;
+  height: 1px;
+  background-color: #fff;
+  position: absolute;
+  top: 50%;
+  right: 21px;
+}
+
+.header {
+  width: 100vw;
+  z-index: 10;
+  position: absolute;
+  top: 0;
+}
+
+.header__wrapp {
+  width: 85%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 auto;
+  padding-top: 2.60416667vw;
+}
+
+.header__wrapp-logo {
+  margin-right: 24px;
+}
+
+.header__wrapp-menu-btn {
+  cursor: pointer;
+}
+
+.header__wrapp-menu-btn span {
+  display: block;
+  height: 4px;
+  background-color: #fff;
+}
+
+.header__wrapp-menu-btn .line1 {
+  width: 54px;
+  margin-bottom: 9px;
+}
+
+.header__wrapp-menu-btn .line2 {
+  width: 69px;
+}
+
+.header__wrapp-tel {
+  font-family: 'GilroyLight', sans-serif;
+  font-size: calc(26px + 12 * (100vw / 1920));
+  color: #2e3339;
+  margin-left: auto;
+}
+
+.arror {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.arror__left {
+  width: 50vw;
+  height: 100vh;
+  background-image: url(../img/bg_1-min.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  padding-bottom: 2.60416667vw;
+}
+
+.arror__left-footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  z-index: 2;
+  padding-left: 5.20834vw;
+}
+
+.arror__left-footer-credo {
+  margin-right: 4.947915vw;
+}
+
+.arror__left-footer-social ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.arror__left-footer-social ul li {
+  margin-right: 17px;
+}
+
+.arror__left-footer-social ul li:last-child {
+  margin-right: 0;
+}
+
+.arror__right {
+  background-color: #f3f4f6;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  z-index: 2;
+  width: 50vw;
+  height: 100vh;
+}
+
+@media screen and (max-width: 968px) {
+  br {
+    display: none;
+  }
+  .pages {
+    height: auto;
+  }
+  .btn a {
+    font-size: 14px;
+    padding: 16px 65px 16px 22px;
+  }
+  .header {
+    width: 100%;
+    margin: 0 auto;
+    z-index: 10;
+  }
+  .header__wrapp-menu-btn {
+    cursor: pointer;
+  }
+  .header__wrapp-menu-btn span {
+    display: block;
+    height: 4px;
+    background-color: #fff;
+  }
+  .header__wrapp-menu-btn .line1 {
+    width: 45px;
+    margin-bottom: 9px;
+  }
+  .header__wrapp-menu-btn .line2 {
+    width: 56px;
+  }
+  .header__wrapp-tel {
+    display: none;
+  }
+  .arror {
+    width: 100vw;
+    height: 100vh;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .arror__left {
+    width: 100%;
+    height: 50vh;
+  }
+  .arror__left-footer {
+    margin-top: 30px;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+  .arror__left-footer-credo {
+    margin-right: 0;
+  }
+  .arror__left-footer-social {
+    display: none;
+  }
+  .arror__right {
+    width: 100%;
+    height: 50vh;
+  }
+}
+/*# sourceMappingURL=style.css.map */

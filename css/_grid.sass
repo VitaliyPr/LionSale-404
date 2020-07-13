@@ -1,0 +1,25 @@
+@import 'fonts'
+
+*, *:after, *:before
+  box-sizing: border-box
+  margin: 0
+  padding: 0
+  outline: none
+
+a, a:focus, a:hover, a:link, a:active
+  text-decoration: none
+  color: inherit
+
+
+body
+  +reg
+  perspective: 1
+  transform-style: preserve-3d
+  text-rendering: optimizeLegibility
+  overflow: hidden
+
+html
+  scroll-behavior: smooth
+
+ul
+  list-style: none
