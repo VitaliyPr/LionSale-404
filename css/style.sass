@@ -15,11 +15,6 @@
 .main 
   display: block
 
-// .scroll-container
-//   display: flex
-//   flex-wrap: nowrap
-//   overflow-x: auto
-
 .btn
   a
     font-size: 16px
@@ -43,37 +38,63 @@
   position: absolute
   top: 0
   &__wrapp
-    width: 85%
+    width: 80%
     display: flex
     align-items: center
-    margin: 0 auto
-    padding-top: 2.60416667vw
-    &-logo
-      margin-right: 24px
-    &-menu
-      &-btn
-        cursor: pointer
-        span
-          display: block
-          height: 4px
-          background-color: #fff
-        .line1
-          width: 54px
-          margin-bottom: 9px
-        .line2 
-          width: 69px
-    &-tel
-      +light
-      font-size: calc(26px + 12 * (100vw / 1920))
-      color: #2e3339
-      margin-left: auto
+    margin-left: 109px
+    margin-top: 4vh
+  &-logo
+    margin-right: 24px
+  &-menu
+    &-btn
+      cursor: pointer
+      span
+        display: block
+        height: 4px
+        background-color: #fff
+      .line1
+        width: 54px
+        margin-bottom: 9px
+      .line2 
+        width: 69px
+  &-tel
+    +light
+    font-size: 38.36px
+    color: #fff
+    margin-left: auto
 
+.first
+  position: relative
+  height: 100vh
+  &__wrapp
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    z-index: 2
+    height: 70vh
+    width: 80%
+    margin-top: 26.7vh
+    margin-left: 109px
+    &-footer
+      display: flex
+      align-items: center
+      z-index: 2
+      &-credo
+        margin-right: 93px
+      &-social
+        ul
+          display: flex
+          li 
+            a 
+              margin-right: 17px
 
 .arror
   position: relative
   width: 100vw
   height: 100vh
   display: flex
+  .header-tel
+      color: #2e3339
   &__left
     width: 50vw
     height: 100vh
@@ -84,28 +105,41 @@
     display: flex
     align-items: flex-end
     padding-bottom: 2.60416667vw
-    &-footer
+    &-credo
+      margin-bottom: 3.64583333vw
+    .first__wrapp
+      justify-content: flex-end
+  &__right
+    width: 50vw
+    height: 44%
+    margin: auto
+    &-wrapp
+      background-image: url('../img/404.png')
+      background-repeat: no-repeat
+      background-size: contain
+      background-position: top
+      display: flex
+      flex-direction: column
+      justify-content: flex-end
+      position: relative
+      height: 100%
+      margin: 0 6.25vw
+    &-text
+      margin-bottom: 13.8741vh
+      padding-left: 4vw 
+      p
+        +light
+        color: #2e3339
+        font-size: 75px
+    &-link
       display: flex
       align-items: center
-      z-index: 2
-      padding-left: 5.20834vw
-      &-credo
-        margin-right: 4.947915vw
-      &-social
-        ul
-          display: flex
-          li
-            margin-right: 17px
-            &:last-child
-              margin-right: 0
-  &__right
-    background-color: #f3f4f6
-    display: flex
-    flex-direction: column
-    justify-content: space-between
-    z-index: 2
-    width: 50vw
-    height: 100vh
+      justify-content: flex-end
+      a
+        display: flex
+        align-items: center
+        span
+          margin-right: 20px
     
       
 
@@ -122,28 +156,25 @@
     width: 100%
     margin: 0 auto
     z-index: 10
-    &__wrapp
-      &-menu
-        &-btn
-          cursor: pointer
-          span
-            display: block
-            height: 4px
-            background-color: #fff
-          .line1
-            width: 45px
-            margin-bottom: 9px
-          .line2 
-            width: 56px
-      &-tel
-        display: none
+    &-menu
+      &-btn
+        cursor: pointer
+        span
+          display: block
+          height: 4px
+          background-color: #fff
+        .line1
+          width: 45px
+          margin-bottom: 9px
+        .line2 
+          width: 56px
+    &-tel
+      display: none
   .arror
     width: 100vw
     height: 100vh
     flex-direction: column
-    &__left
-      width: 100%
-      height: 50vh
+    .first__wrapp
       &-footer
         margin-top: 30px 
         justify-content: flex-end 
@@ -151,6 +182,9 @@
           margin-right: 0
         &-social 
           display: none
+    &__left
+      width: 100%
+      height: 50vh
     &__right
       width: 100%
       height: 50vh
