@@ -446,15 +446,12 @@ ul {
     background-color: #3a4151;
     opacity: .95;
   }
-  .arror header {
-    height: 15%;
-  }
   .arror .first__wrapp {
     padding-top: 0;
   }
   .arror__left {
     width: 100%;
-    height: 35%;
+    height: 50%;
     padding-bottom: 30px;
     background: none;
   }
