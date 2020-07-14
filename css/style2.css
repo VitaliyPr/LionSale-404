@@ -290,11 +290,14 @@ ul {
   display: flex;
 }
 
+.arror .first__wrapp {
+  width: 100%;
+}
+
 .arror .lion {
   background-image: url("../img/lion.png");
   background-repeat: no-repeat;
-  background-position: center;
-  background-position-x: 85%;
+  background-position: center right;
   background-size: contain;
   position: absolute;
   width: 100%;
