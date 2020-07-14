@@ -1,6 +1,7 @@
 @font-face {
   font-family: 'GilroyRegular';
-  src: url("../fonts/Gilroy-Regular.woff") format("woff");
+  src: url("../fonts/Gilroy-Regular.eot");
+  src: url("../fonts/Gilroy-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Gilroy-Regular.woff") format("woff"), url("../fonts/Gilroy-Regular.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -8,7 +9,8 @@
 
 @font-face {
   font-family: 'GilroyThin';
-  src: url("../fonts/Gilroy-Thin.woff") format("woff");
+  src: url("../fonts/Gilroy-Thin.eot");
+  src: url("../fonts/Gilroy-Thin.eot?#iefix") format("embedded-opentype"), url("../fonts/Gilroy-Thin.woff") format("woff"), url("../fonts/Gilroy-Thin.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -16,7 +18,8 @@
 
 @font-face {
   font-family: 'GilroyLight';
-  src: url("../fonts/Gilroy-Light.woff") format("woff");
+  src: url("../fonts/Gilroy-Light.eot");
+  src: url("../fonts/Gilroy-Light.eot?#iefix") format("embedded-opentype"), url("../fonts/Gilroy-Light.woff") format("woff"), url("../fonts/Gilroy-Light.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -32,7 +35,8 @@
 
 @font-face {
   font-family: 'GilroyExtraBold';
-  src: url("../Gilroy-ExtraBold.woff") format("woff");
+  src: url("../fonts/Gilroy-ExtraBold.eot");
+  src: url("../fonts/Gilroy-ExtraBold.eot?#iefix") format("embedded-opentype"), url("../fonts/Gilroy-ExtraBold.woff") format("woff"), url("../fonts/Gilroy-ExtraBold.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -40,7 +44,8 @@
 
 @font-face {
   font-family: 'GilroyRegular';
-  src: url("../fonts/Gilroy-Regular.woff") format("woff");
+  src: url("../fonts/Gilroy-Regular.eot");
+  src: url("../fonts/Gilroy-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Gilroy-Regular.woff") format("woff"), url("../fonts/Gilroy-Regular.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -48,7 +53,8 @@
 
 @font-face {
   font-family: 'GilroyThin';
-  src: url("../fonts/Gilroy-Thin.woff") format("woff");
+  src: url("../fonts/Gilroy-Thin.eot");
+  src: url("../fonts/Gilroy-Thin.eot?#iefix") format("embedded-opentype"), url("../fonts/Gilroy-Thin.woff") format("woff"), url("../fonts/Gilroy-Thin.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -56,7 +62,8 @@
 
 @font-face {
   font-family: 'GilroyLight';
-  src: url("../fonts/Gilroy-Light.woff") format("woff");
+  src: url("../fonts/Gilroy-Light.eot");
+  src: url("../fonts/Gilroy-Light.eot?#iefix") format("embedded-opentype"), url("../fonts/Gilroy-Light.woff") format("woff"), url("../fonts/Gilroy-Light.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -72,7 +79,8 @@
 
 @font-face {
   font-family: 'GilroyExtraBold';
-  src: url("../Gilroy-ExtraBold.woff") format("woff");
+  src: url("../fonts/Gilroy-ExtraBold.eot");
+  src: url("../fonts/Gilroy-ExtraBold.eot?#iefix") format("embedded-opentype"), url("../fonts/Gilroy-ExtraBold.woff") format("woff"), url("../fonts/Gilroy-ExtraBold.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -208,6 +216,29 @@ ul {
   height: 100vh;
 }
 
+.first #particles-background {
+  background: url(../img/lion.png) right no-repeat, -webkit-gradient(linear, left top, right bottom, from(rgba(33, 42, 49, 0.9)), color-stop(rgba(38, 48, 57, 0.9)), color-stop(rgba(44, 54, 65, 0.9)), color-stop(rgba(51, 60, 74, 0.9)), to(rgba(58, 66, 82, 0.9)));
+  background: url(../img/lion.png) right no-repeat, linear-gradient(to right bottom, rgba(33, 42, 49, 0.9), rgba(38, 48, 57, 0.9), rgba(44, 54, 65, 0.9), rgba(51, 60, 74, 0.9), rgba(58, 66, 82, 0.9));
+  background-image: linear-gradient(-76deg, #31394e 0%, #040f14 100%);
+  background-color: #3a4151;
+  opacity: .95;
+  left: 0;
+  background-size: contain;
+  top: 0;
+  -webkit-transform: scale3d(1);
+  transform: scale3d(1);
+}
+
+.first .vertical-centered-box {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  text-align: center;
+  z-index: 0;
+}
+
 .first__wrapp {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -257,8 +288,6 @@ ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  background-image: linear-gradient(-76deg, #31394e 0%, #040f14 100%);
-  background-color: #3a4151;
 }
 
 .arror .lion {
@@ -270,6 +299,7 @@ ul {
   width: 100%;
   height: 80%;
   margin: 5% 0;
+  z-index: 1;
 }
 
 .arror__content {
@@ -391,18 +421,21 @@ ul {
     -webkit-box-direction: normal !important;
         -ms-flex-direction: column !important;
             flex-direction: column !important;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     padding: 0;
     background-image: linear-gradient(-76deg, #31394e 0%, #040f14 100%);
     background-color: #3a4151;
     opacity: .95;
   }
   .arror .first__wrapp {
-    height: 100vh;
-    padding-top: 0;
+    padding-top: 0px;
     padding-bottom: 30px;
+    height: 60%;
   }
-  .arror__content {
-    height: 70%;
+  .arror .first__wrapp-footer {
+    margin-top: 0;
   }
   .arror__center {
     display: -webkit-box;
@@ -420,6 +453,7 @@ ul {
   }
   .arror__404 p {
     font-size: 80px;
+    line-height: 90px;
   }
   .arror__404 p span {
     font-size: 120px;

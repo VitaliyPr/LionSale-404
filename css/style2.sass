@@ -66,6 +66,24 @@
 .first
   position: relative
   height: 100vh
+  #particles-background
+    background: url(../img/lion.png) right no-repeat, linear-gradient(to right bottom, rgba(33, 42, 49, 0.9), rgba(38, 48, 57, 0.9), rgba(44, 54, 65, 0.9), rgba(51, 60, 74, 0.9), rgba(58, 66, 82, 0.9))
+    background-image: linear-gradient(-76deg, #31394e 0%, #040f14 100%)
+    background-color: #3a4151
+    opacity: .95
+    left: 0
+    background-size: contain
+    top: 0
+    -webkit-transform: scale3d(1)
+    transform: scale3d(1)
+  .vertical-centered-box
+    position: absolute
+    left: 0
+    right: 0
+    top: 0
+    bottom: 0
+    text-align: center
+    z-index: 0
   &__wrapp
     display: flex
     flex-direction: column
@@ -93,8 +111,6 @@
   width: 100vw
   height: 100vh
   display: flex
-  background-image: linear-gradient(-76deg, #31394e 0%, #040f14 100%)
-  background-color: #3a4151
   .lion
     background-image: url('../img/lion.png')
     background-repeat: no-repeat
@@ -104,6 +120,7 @@
     width: 100% 
     height: 80%
     margin: 5% 0
+    z-index: 1
   &__content
     display: flex
     justify-content: center
@@ -189,16 +206,18 @@
     width: 100vw !important
     height: 100vh !important
     flex-direction: column !important
+    justify-content: space-between
     padding: 0 
     background-image: linear-gradient(-76deg, #31394e 0%, #040f14 100%)
     background-color: #3a4151
     opacity: .95
     .first__wrapp
-      height: 100vh
-      padding-top: 0
+      padding-top: 0px
       padding-bottom: 30px
+      height: 60%
+      &-footer
+        margin-top: 0
     &__content
-      height: 70% 
     &__center
       display: flex
       justify-content: center
@@ -208,5 +227,6 @@
     &__404
       p
         font-size: 80px
+        line-height: 90px
         span
           font-size: 120px
