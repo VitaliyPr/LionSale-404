@@ -302,10 +302,6 @@ ul {
   padding-bottom: 2.60416667vw;
 }
 
-.arror__left-credo {
-  margin-bottom: 3.64583333vw;
-}
-
 .arror__left .first__wrapp {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
@@ -473,9 +469,6 @@ ul {
     height: 50%;
     padding-bottom: 30px;
     background: none;
-  }
-  .arror__left-credo {
-    display: none;
   }
   .arror__right {
     width: 100%;
